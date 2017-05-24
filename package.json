@@ -1,0 +1,19 @@
+{
+  "name": "innovation_nodeapiserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillymojo/innovation_nodeapiserver.git"
+  },
+  "author": "Morgan Bonar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phillymojo/innovation_nodeapiserver/issues"
+  },
+  "homepage": "https://github.com/phillymojo/innovation_nodeapiserver#readme"
+}
