@@ -15,5 +15,8 @@ router.get('/', (req, res) => {
 router.get('/language_tunnel', (req,res) => {
   res.send('<h2>Language Tunnel</h2>');
 });
+router.get('/test',(req,res) => {
+    res.send('<h2>Test</h2>')
+})
 
 module.exports = router;
