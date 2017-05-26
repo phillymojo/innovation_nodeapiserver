@@ -17,11 +17,16 @@
     "url": "https://github.com/phillymojo/innovation_nodeapiserver/issues"
   },
   "babel": {
-    "presets": ["es2015", "stage-2", "react"]
+    "presets": [
+      "es2015",
+      "stage-2",
+      "react"
+    ]
   },
   "homepage": "https://github.com/phillymojo/innovation_nodeapiserver#readme",
   "dependencies": {
     "express": "^4.15.3",
+    "express-react-views": "^0.10.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
