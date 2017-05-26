@@ -5,10 +5,10 @@ class Layout extends React.Component {
     return (
       <html>
         <head>
-
+          <title>{this.props.title}</title>
         </head>
         <body>
-
+          {this.props.children}
         </body>
       </html>
     )
