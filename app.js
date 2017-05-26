@@ -1,9 +1,11 @@
-const express = require('express');
+import express from 'express';
+import routes from './routes/index';
+
 const app = express();
 
-const reactDomServer = require('react-dom/server');
-
-const routes = require('./routes/index');
+app.set('views', __dirname + '/views');
+app.set('view engine', 'js');
+app.engine('js', require('express-react-views').createEngine());
 
 app.set('port', process.env.PORT || 6161);
 
