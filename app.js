@@ -10,6 +10,7 @@ app.engine('js', require('express-react-views').createEngine());
 app.set('port', process.env.PORT || 6161);
 
 app.use('/', routes);
+app.use(express.static('styles'))
 
 app.listen(app.get('port'), () => {
   console.log(`Express running → PORT ${app.get('port')}`);
