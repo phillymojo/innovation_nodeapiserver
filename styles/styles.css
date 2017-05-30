@@ -1,12 +1,17 @@
-.region-styles {
-	/*position: relative;*/
+.country-image-wrapper {
+	display: inline;
+	height: 11px;	
+	padding-right: 5px;
+	width: 16px;	
 }
+
 .language-tunnel-wrapper {
 	text-align: center;
 }
-/*.country-select-container {
-	display: none;
-}*/
+
+li {
+	list-style: none;
+}
 
 .hide-element {
 	display: none;
@@ -20,11 +25,12 @@
 .region-section-wrapper {
 	min-width: 800px;
 }
+
 .region-image-wrapper {
 	height: 70px;	
 	width: 70px;
 }
-.swoosh-language {
+.the-logo {
 	padding-top: 170px;
 	height: 32px;
 }

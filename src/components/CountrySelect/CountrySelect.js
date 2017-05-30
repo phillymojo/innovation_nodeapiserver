@@ -4,7 +4,7 @@ function CountryList(props) {
   const countries = props.countries;
   const optionItems = countries.map((country) =>
   	<li key={country.toString()}>  
-  		<span class={country + '-flag'}> Flag </span>		
+      <img className={country + '-flag country-image-wrapper'} src={'http://localhost:6161/images/' + country + 'Flag.png'}></img>
 	    <span value={country} className={props.className + ' ncss-brand bg-white country-item'} >
 	      {country}
 	    </span>
