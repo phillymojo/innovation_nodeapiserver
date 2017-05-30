@@ -5,20 +5,20 @@ import CountrySelect from '../CountrySelect';
 function RegionList(props) {
   const countries = props.countries;
   const optionItems = countries.map((country) =>
-  	<div>
+  	<div key={country.toString()}>
 			<button>
 			<div>
 				<span>{country} IMAGE</span>
 			</div>
-		    <span key={country.toString()}value={country}className="{props.className} ncss-brand region-styles">
+		    <span value={country} className={props.className + ' ncss-brand region-styles'} >
 		      {country}
-		    </span>  		
+		    </span>
 			</button>
 			<CountrySelect />
 		</div>
   );
   return (
-    <div className="{props.className} ncss-brand" name="{props.name}">
+    <div className={props.className + ' ncss-brand'} name={props.name}>
       {optionItems}
     </div>
   );

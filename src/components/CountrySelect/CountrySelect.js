@@ -3,15 +3,15 @@ import React from 'react';
 function CountryList(props) {
   const countries = props.countries;
   const optionItems = countries.map((country) =>
-  	<li>  
-  		<span class="{country}-flag"> Flag </span>		
-	    <span key={country.toString()}value={country}className="{props.className} ncss-brand bg-white country-item">
+  	<li key={country.toString()}>  
+  		<span class={country + '-flag'}> Flag </span>		
+	    <span value={country} className={props.className + ' ncss-brand bg-white country-item'} >
 	      {country}
 	    </span>  		
   	</li>
   );
   return (
-    <span className="{props.className} ncss-brand" name="{props.name}">
+    <span className={props.className + ' ncss-brand'} name={props.name}>
       {optionItems}
     </span>
   );

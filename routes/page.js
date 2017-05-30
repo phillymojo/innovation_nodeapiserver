@@ -18,4 +18,17 @@ router.get('/', (req, res) => {
   });
 });
 
+router.get('/language_tunnel', (req, res) => {
+  res.render('language_tunnel', {
+    pageName: 'Language Tunnel',
+    title: 'Language Tunnel'
+  });
+})
+
+router.get('/sample', (req, res) => {
+  res.render('sample', {
+
+  });
+})
+
 export default router; 
