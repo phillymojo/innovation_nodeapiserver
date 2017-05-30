@@ -10,7 +10,7 @@ app.engine('js', require('express-react-views').createEngine());
 
 app.set('port', process.env.PORT || 6161);
 
-app.use(express.static('styles'))
+app.use(express.static('styles'));
 app.use('/', routes_page);
 app.use('/api', routes_api);
 

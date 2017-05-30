@@ -1,0 +1,40 @@
+.region-styles {
+	/*position: relative;*/
+}
+.language-tunnel-wrapper {
+	text-align: center;
+}
+/*.country-select-container {
+	display: none;
+}*/
+
+.hide-element {
+	display: none;
+}
+
+.country-list {
+	display: inline-flex;
+	padding: 15px;
+}
+
+.region-section-wrapper {
+	min-width: 800px;
+}
+.region-image-wrapper {
+	height: 70px;	
+	width: 70px;
+}
+.swoosh-language {
+	padding-top: 170px;
+	height: 32px;
+}
+
+.location-select {
+	font-size: 35px;
+	padding-top: 10px;
+}
+
+button {
+	border: none;
+	background-color: white;
+}
