@@ -1,43 +1,37 @@
 import React from 'react';
-// import './region.css';
-import CountrySelect from '../CountrySelect';
 
 function RegionList(props) {
   const countries = props.countries;
   const optionItems = countries.map((country) =>
-  	<div key={country.toString()}>
+  	<div key={country.toString()} className="country-list ncss-brand">
 			<button>
 			<div>
-				<span>{country} IMAGE</span>
+				<img className="region-image-wrapper"src="http://localhost:6161/images/africa.png"></img>
 			</div>
 		    <span value={country} className={props.className + ' ncss-brand region-styles'} >
 		      {country}
 		    </span>
 			</button>
-			<CountrySelect />
 		</div>
   );
   return (
-    <div className={props.className + ' ncss-brand'} name={props.name}>
+    <div className="region-section-wrapper ncss-brand" name={props.name}>
       {optionItems}
     </div>
   );
 }
 
-const country = ['NORTH AMERICA', 'SOUTH AMERICA', 'EUROPE', 'ASIA PACIFIC', 'MIDDLE EAST', 'AFRICA'];
+const country = ['northAmerica', 'southAmerica', 'europe', 'asiaPacific', 'middleEast', 'africa'];
 
 class Region extends React.Component {
+	
   render() {
     return (
-      <div className="input-container region-select-container">
-        <label className="country-select-label text-color-accent ncss-brand">
+      <div>
+        <label className="text-color-accent ncss-brand location-select">
           SELECT YOUR LOCATION
         </label>
-        <div className="country-select-input">
-          <div className="country-list ncss-brand">
-            <RegionList countries={country} className="countryOption ncss-base" name="country" />
-          </div>
-        </div>
+          <RegionList countries={country} className="countryOption ncss-base" name="country" />
       </div>
     )
   }

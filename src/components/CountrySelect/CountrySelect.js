@@ -7,7 +7,7 @@ function CountryList(props) {
   		<span class={country + '-flag'}> Flag </span>		
 	    <span value={country} className={props.className + ' ncss-brand bg-white country-item'} >
 	      {country}
-	    </span>  		
+	    </span>
   	</li>
   );
   return (
@@ -26,11 +26,7 @@ class CountrySelect extends React.Component {
         <label className="country-select-label text-color-accent ncss-brand">
           Country
         </label>
-        <div className="country-select-input">
-          <div className="country-list ncss-brand">
-            <CountryList countries={country} className="countryOption ncss-base" name="country" />
-          </div>
-        </div>
+        <CountryList countries={country} className="countryOption ncss-base" name="country" />
       </div>
     )
   }
