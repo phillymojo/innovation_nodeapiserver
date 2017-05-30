@@ -6,7 +6,7 @@ function RegionList(props) {
   	<div key={country.toString()} className="country-list ncss-brand">
 			<button>
 			<div>
-				<img className="region-image-wrapper"src="http://localhost:6161/images/africa.png"></img>
+				<img className="region-image-wrapper"src={'http://localhost:6161/images/' + country + '.png'}></img>
 			</div>
 		    <span value={country} className={props.className + ' ncss-brand region-styles'} >
 		      {country}
@@ -28,7 +28,7 @@ class Region extends React.Component {
   render() {
     return (
       <div>
-        <label className="text-color-accent ncss-brand location-select">
+        <label className="text-color-accent ncss-brand location-select">      
           SELECT YOUR LOCATION
         </label>
           <RegionList countries={country} className="countryOption ncss-base" name="country" />
