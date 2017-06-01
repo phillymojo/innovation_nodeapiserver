@@ -1,4 +1,5 @@
 import React from 'react';
+import CountrySelect from '../CountrySelect';
 
 function RegionList(props) {
   const countries = props.countries;
@@ -12,6 +13,8 @@ function RegionList(props) {
 		      {country}
 		    </span>
 			</button>
+      <span className="open-symbol">+</span>
+			<CountrySelect />
 		</div>
   );
   return (
@@ -27,8 +30,10 @@ class Region extends React.Component {
 	
   render() {
     return (
-      <div>
-        <label className="text-color-accent ncss-brand location-select">      
+      <div className="upper-language-region">
+        <img src="http://localhost:6161/images/swoosh.png" className="the-logo" />
+        <br />  
+        <label className="ncss-brand location-select">
           SELECT YOUR LOCATION
         </label>
           <RegionList countries={country} className="countryOption ncss-base" name="country" />

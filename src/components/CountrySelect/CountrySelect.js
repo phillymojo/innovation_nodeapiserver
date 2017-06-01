@@ -23,10 +23,10 @@ class CountrySelect extends React.Component {
   render() {
     return (
       <div className="input-container country-select-container">
-        <label className="country-select-label text-color-accent ncss-brand">
+        <label className="country-select-label ncss-brand">
           Country
         </label>
-        <CountryList countries={country} className="countryOption ncss-base" name="country" />
+        <CountryList countries={country} className="ncss-base" name="country" />
       </div>
     )
   }
