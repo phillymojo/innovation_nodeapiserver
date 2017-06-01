@@ -17,9 +17,21 @@ li {
 	display: none;
 }
 
+.country-select-container {
+	display: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.show-field {
+	display: inline;
+}
+
 .country-list {
-	display: inline-flex;
-	padding: 15px;
+	display: inline;
+	padding: 0 3%;
 }
 
 .region-section-wrapper {
@@ -30,9 +42,19 @@ li {
 	height: 70px;	
 	width: 70px;
 }
+
+.open-symbol {
+	display: none;
+}
+
 .the-logo {
-	padding-top: 170px;
-	height: 32px;
+	display: inline;
+	padding-top: 150px;
+}
+
+.upper-language-region {
+	border-bottom: 1px;
+	border-style: solid;
 }
 
 .location-select {
@@ -43,4 +65,46 @@ li {
 button {
 	border: none;
 	background-color: white;
+}
+
+@media (max-width: 600px) {
+	.open-symbol {
+		display: inline;
+		float: right;
+	}
+	
+	.language-tunnel-wrapper {
+		text-align: none;
+	}
+	
+	.location-select {
+		font-size: 20px;
+		padding-top: 10px;
+	}
+	
+	.region-section-wrapper {
+    border-top: 1px;
+    border-style: solid;
+    margin-top: 40px;
+		min-width: 150px;
+	}
+	.the-logo {
+		display: inline;
+		padding-top: 20px;
+	}
+  .region-image-wrapper {
+    display: none;
+  }
+  
+  .upper-language-region {
+		border: none;
+	}
+  
+  .country-list {
+  	border-bottom: 1px;
+  	border-color: gray;
+  	border-style: solid;
+  	display: block;
+  	text-align: left;
+  }
 }
